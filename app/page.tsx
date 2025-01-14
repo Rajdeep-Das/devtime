@@ -1,7 +1,8 @@
 // app/page.tsx
 //import DashboardMockup from "@/components/dashboard-mockup";
-import InteractiveDashboardMockup from "@/components/dashboard-mockup-interactive";
-import { MainNav } from "@/components/main-nav";
+import InteractiveDashboardMockup from "@/components/marketing/dashboard-mockup-interactive";
+import { HeroButtons } from "@/components/marketing/herobuttons";
+import { MainNav } from "@/components/marketing/main-nav";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Clock, Code, Focus } from "lucide-react";
@@ -34,13 +35,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex justify-center gap-4">
-                  <Button size="lg" className="h-12 px-6">
-                    Get Started
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                  <Button size="lg" variant="outline" className="h-12 px-6">
-                    View Demo
-                  </Button>
+                  <HeroButtons />
                 </div>
               </div>
 
